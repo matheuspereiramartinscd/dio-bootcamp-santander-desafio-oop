@@ -5,6 +5,18 @@ import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
 
+class Pessoa {
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
@@ -21,10 +33,6 @@ public class Main {
         mentoria.setTitulo("mentoria de java");
         mentoria.setDescricao("descrição mentoria java");
         mentoria.setData(LocalDate.now());
-
-        /*System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);*/
 
         Bootcamp bootcamp = new Bootcamp();
         bootcamp.setNome("Bootcamp Java Developer");
@@ -59,5 +67,4 @@ public class Main {
         System.out.println("XP:" + devJoao.calcularTotalXp());
 
     }
-
 }
